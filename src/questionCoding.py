@@ -1,9 +1,14 @@
 from sklearn import datasets
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report, confusion_matrix,roc_curve, auc, accuracy_score
+#from sklearn.base import BaseEstimator, TransformerMixin, ClassifierMixin
+#from sklearn.linear_model import LogisticRegression
 import numpy as np
-from pkgCustom.custom_estimator import custom_estimator
-from pkgCustom.ThresholdBinarizer import ThresholdBinarizer
+#from pkgCustom.custom_estimator import custom_estimator
+#from pkgCustom.ThresholdBinarizer import ThresholdBinarizer
+
+from pkgCustom import custom_estimator
+from pkgCustom import ThresholdBinarizer
 
 iris = datasets.load_iris()
 X = iris.data

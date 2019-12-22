@@ -1,6 +1,5 @@
 from sklearn.base import BaseEstimator, TransformerMixin, ClassifierMixin
 from sklearn.linear_model import LogisticRegression
-import numpy as np
 
 class custom_estimator(BaseEstimator, ClassifierMixin):
     def __init__(self, X, y):

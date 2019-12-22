@@ -1,6 +1,4 @@
 from sklearn.base import BaseEstimator, TransformerMixin, ClassifierMixin
-from sklearn.linear_model import LogisticRegression
-import numpy as np
 
 class ThresholdBinarizer(BaseEstimator, TransformerMixin):
     # Class Constructor
